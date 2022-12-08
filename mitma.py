@@ -51,8 +51,8 @@ try:
         print('\rsending packets = ' + str(number) + ' \n', end = ' ')
         time.sleep(3)
 except KeyboardInterrupt:
-    print('keyboard interrupt\n')
-    print('arp poisinig has been terminated\n')
+    print('Keyboard interrupt\n')
+    print('ARP poisinig has been terminated\n')
 except IndexError:
     print('Router can have ARP mechanisms. The Attack was fail.')
 
