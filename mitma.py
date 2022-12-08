@@ -28,9 +28,9 @@ def get_inputs():
     options = parser.parse_args()[0]
 
     if not options.target_ip:
-        print('enter target ip')
+        print('enter target ip: ')
     if not options.gateway_ip:
-        print('enter gateway_ip')
+        print('enter gateway_ip: ')
 
     return options
 
@@ -51,8 +51,8 @@ try:
         print('\rsending packets = ' + str(number) + ' \n', end = ' ')
         time.sleep(3)
 except KeyboardInterrupt:
-    print('keyboard interrupt\n')
-    print('arp poisinig has been terminated\n')
+    print('Keyboard interrupt\n')
+    print('ARP poisinig has been terminated\n')
 except IndexError:
     print('Router can have ARP mechanisms. The Attack was fail.')
 
