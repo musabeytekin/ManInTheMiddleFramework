@@ -28,9 +28,9 @@ def get_inputs():
     options = parser.parse_args()[0]
 
     if not options.target_ip:
-        print('enter target ip')
+        print('enter target ip: ')
     if not options.gateway_ip:
-        print('enter gateway_ip')
+        print('enter gateway_ip: ')
 
     return options
 
